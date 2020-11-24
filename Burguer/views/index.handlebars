@@ -1,30 +1,33 @@
-<h1>burguer!</h1>
+<h1>burguers!</h1>
 
 <h2>Devoured burguers</h2>
 
 <ul>
-  {{#each burguer}}
-    {{#unless devoured}}
-      {{> burguer/burguer-block devoured=true}}
-    {{/unless}}
+  {{#each burguers}}
+  {{#unless devoured}}
+  <div>{{this.burguer_name}}</div>
+  <div>{{this.devoured}}</div>
+  {{/unless}}
+
   {{/each}}
 </ul>
 
-<h2>burguer list!</h2>
+<h2>burguers list!</h2>
 
 <ul>
-  {{#each burguer}}
-    {{#if devoured}}
-      {{> burguer/burguer-block devoured=false}}
-    {{/if}}
+  {{#each burguers}}
+  {{#if devoured}}
+  <div>{{this.burguer_name}}</div>
+  <div>{{this.devoured}}</div>
+  {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a burguer</h2>
+<h2>Add a burguers</h2>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">burguer Name:</label>
+    <label for="ca">burguers Name:</label>
     <input type="text" id="ca" name="name">
   </div>
 
@@ -34,5 +37,5 @@
     <input type="radio" name="devoured" value="0"> Not eaten
   </div>
 
-  <button type="submit">Add burguer</button>
+  <button type="submit">Add burguers</button>
 </form>
