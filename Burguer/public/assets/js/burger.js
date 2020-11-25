@@ -11,12 +11,12 @@ $(function() {
       };
   
       // Send the PUT request.
-      $.ajax("/api/burguers/" + id, {
+      $.ajax("/api/burgers/" + id, {
         type: "PUT",
         data: newStatus
       }).then(
         function() {
-          console.log("changed burguer status to", status);
+          console.log("changed burger status to", status);
           // Reload the page to get the updated list
           location.reload();
         }
@@ -27,18 +27,18 @@ $(function() {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
-      const newBurguer = {
-        burguer_name: $("#burguer-name").val().trim(),
+      const newBurger = {
+        burger_name: $("#burger-name").val().trim(),
         devoured: $("[name=devoured]:checked").val().trim()
       };
-      console.log (newBurguer);
+      console.log (newBurger);
       // Send the POST request.
-      $.ajax("/api/burguers", {
+      $.ajax("/api/burgers", {
         type: "POST",
-        data: newBurguer
+        data: newBurger
       }).then(
         function() {
-          console.log("add new burguer");
+          console.log("add new burger");
           // Reload the page to get the updated list
           location.reload();
         }
