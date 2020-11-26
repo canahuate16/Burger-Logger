@@ -14,7 +14,7 @@
 ![Burger_logger](https://user-images.githubusercontent.com/15930792/100308959-a0c7e280-2f77-11eb-9639-e06085d25519.PNG)
 
 ## Project Description
-* The Burger Logger is an application built with MySQL, Node, Express, Handlebars and ORM. This application was consutructed utilizing the  MVC design pattern; We are using Node and MySQL to query and route data in your app, and Handlebars to generate the HTML.
+* The Burger Logger is a full stack web application built with MySQL, Node, Express, Handlebars and ORM. This application was consutructed utilizing the  MVC design pattern; We are using Node and MySQL to query and route data in your app, and Handlebars to generate the HTML.
 
 ## Heroku link:
 https://burger-logger-proj.herokuapp.com/
