@@ -10,14 +10,15 @@
 7. [License](#license)
 8. [Questions](#questions)
 
+## App link:
+https://burger-logger-proj.herokuapp.com/
+
 ## Website Images:
 ![Burger_logger](https://user-images.githubusercontent.com/15930792/100311792-a674f680-2f7e-11eb-83c0-33be32ba0eeb.PNG)
 
 ## Project Description
 * The Burger Logger is a full stack web application built with MySQL, Node, Express, Handlebars and ORM. This application was consutructed utilizing the  MVC design pattern; We are using Node and MySQL to query and route data in your app, and Handlebars to generate the HTML.
 
-## App link:
-https://burger-logger-proj.herokuapp.com/
 
 ## Installation Instructions
 * Run NPM install to obtain all dependencies
